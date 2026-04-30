@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduLearn Academy</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background: #f4f6f9;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background: #2563eb;
+    color: white;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+/* Layout */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Left Content */
+.left {
+    flex: 3;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #2563eb;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Courses */
+.courses {
+    display: flex;
+    gap: 15px;
+}
+
+.course-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.course-card h4 {
+    margin: 10px 0;
+}
+
+.course-card button {
+    padding: 8px 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Right Panel */
+.right {
+    flex: 1.5;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #666;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>EDU-LEARN</h2>
+    <ul>
+        <li class="active">Home</li>
+        <li>About</li>
+        <li>Courses</li>
+        <li>Resources</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>EDULEARN ACADEMY</h1>
+        <div>☰ Menu</div>
+    </div>
+
+    <div class="content">
+
+        <!-- Left -->
+        <div class="left">
+
+            <!-- Hero -->
+            <div class="hero">
+                <h2>Learn Anytime, Anywhere</h2>
+                <p>Explore our wide range of courses and start your journey today.</p>
+                <button>Explore Courses</button>
+            </div>
+
+            <h2>Featured Courses</h2>
+
+            <div class="courses">
+
+                <div class="course-card">
+                    <img src="https://via.placeholder.com/300x150">
+                    <h4>Web Development</h4>
+                    <p>HTML, CSS, JavaScript basics.</p>
+                    <button>View Course</button>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://via.placeholder.com/300x150">
+                    <h4>Data Science</h4>
+                    <p>Learn analysis & visualization.</p>
+                    <button>View Course</button>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://via.placeholder.com/300x150">
+                    <h4>UI/UX Design</h4>
+                    <p>Create modern interfaces.</p>
+                    <button>View Course</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right -->
+        <div class="right">
+
+            <div class="card">
+                <h3>Announcements</h3>
+                <p>📢 New React course available</p>
+                <p>📢 Webinar this Saturday</p>
+                <p>📢 Python assignments posted</p>
+            </div>
+
+            <div class="card">
+                <h3>Quick Links</h3>
+                <p>➡ My Dashboard</p>
+                <p>➡ All Courses</p>
+                <p>➡ Certificates</p>
+                <p>➡ Help & Support</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2024 EduLearn Academy | Privacy Policy | Terms
+    </div>
+
+</div>
+
+</body>
+</html>
